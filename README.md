@@ -31,7 +31,7 @@ Have questions? Check out our [Discussion Forum](https://github.com/philosowaffl
 
 ### Quick Start
 
-1. Find the latest release [here](https://github.com/philosowaffle/peloton-to-garmin/releases)
+1. Find the latest release [here](https://github.com/philosowaffle/peloton-to-garmin/tree/v1/dist)
 1. Download the file `peloton-to-garmin-windows.zip`
 1. Unzip the folder
 1. Find the file named `config.ini`, open it with your text editor of choice and modify the Peloton/Garmin settings
@@ -43,7 +43,7 @@ Have questions? Check out our [Discussion Forum](https://github.com/philosowaffl
 
 ### Advanced Setup
 
-1. Download the repo [here](https://github.com/philosowaffle/peloton-to-garmin/archive/master.zip)
+1. Download the repo [here](https://github.com/philosowaffle/peloton-to-garmin/archive/v1.zip)
 1. Extract the zip file
 1. Install the latest version of [Python 3](https://www.python.org/downloads/)
 1. Open `File Explorer` and navigate to the wherever you unzipped the downloaded project
@@ -66,7 +66,7 @@ Have questions? Check out our [Discussion Forum](https://github.com/philosowaffl
 
 ## Linux/MacOs
 
-1. `wget https://github.com/philosowaffle/peloton-to-garmin/archive/master.zip`
+1. `wget https://github.com/philosowaffle/peloton-to-garmin/archive/v1.zip`
 1. `unzip master.zip`
 1. Install [Python 3](https://www.python.org/downloads/)
 1. Navigate so that you are inside the `peloton-to-garmin` folder
@@ -87,9 +87,9 @@ Have questions? Check out our [Discussion Forum](https://github.com/philosowaffl
 
 ## Docker
 
-The image can be pulled from [Docker Hub](https://hub.docker.com/r/philosowaffle/peloton-to-garmin) or [Github Packages](https://github.com/philosowaffle/peloton-to-garmin/packages). See the [Configuration](#configuration) section for a list of all environment variables that can be provided to the container.  A sample docker-compose file can be found [here](https://github.com/philosowaffle/peloton-to-garmin/blob/master/docker-compose.yaml).
+The image can be pulled from [Docker Hub](https://hub.docker.com/r/philosowaffle/peloton-to-garmin). See the [Configuration](#configuration) section for a list of all environment variables that can be provided to the container.  A sample docker-compose file can be found [here](https://github.com/philosowaffle/peloton-to-garmin/blob/v1/docker-compose.yaml).
 
-* `docker pull philosowaffle/peloton-to-garmin`
+* `docker pull philosowaffle/peloton-to-garmin:v1-latest`
 
 ## Configuration
 
@@ -150,7 +150,7 @@ Use cases:
 
 ## Supported Python/OS
 
-The matrix of supported Python versions and OS's can be found [here](https://github.com/philosowaffle/peloton-to-garmin/blob/master/.github/workflows/pr-test.yml#L17).
+The matrix of supported Python versions and OS's can be found [here](https://github.com/philosowaffle/peloton-to-garmin/blob/v1/.github/workflows/pr-test.yml#L17).
 
 ## Database
 
