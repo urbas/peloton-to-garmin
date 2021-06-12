@@ -1,9 +1,11 @@
-name: Build Docker Image - Latest
+name: Build Docker Image - Stable
 
 on:
-  release:
-    types: [published]
   workflow_dispatch:
+    inputs:
+        version:
+          description: 'Release Version'
+          required: true
 
 env:
   DOCKER_REGISTRY: registry.hub.docker.com    
@@ -23,7 +25,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
           repository: philosowaffle/peloton-to-garmin/peloton-to-garmin
-          tags: ${{ github.event.release.tag_name }}
+          tags: v${{ github.event.inputs.version }}
       - name: Set up Docker Buildx      
         uses: crazy-max/ghaction-docker-buildx@v1      
         with:        
