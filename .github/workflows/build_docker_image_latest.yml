@@ -1,4 +1,4 @@
-name: Build Docker Image - Latest
+name: V1 Build Docker Image - Latest
 
 on:
   workflow_dispatch:
