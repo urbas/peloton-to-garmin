@@ -1,6 +1,9 @@
 name: V1 Build Docker Image - Latest
 
 on:
+  push:
+    branches:
+    - v1
   workflow_dispatch:
 
 env:
