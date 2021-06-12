@@ -3,7 +3,7 @@ version: "3.5"
 services:
   p2g:
     container_name: p2g
-    image: philosowaffle/peloton-to-garmin
+    image: philosowaffle/peloton-to-garmin:v1-latest
     environment:
       - P2G_PELOTON_EMAIL=peloton@gmail.com
       - P2G_PELOTON_PASS=peloton_password
